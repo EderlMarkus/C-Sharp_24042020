@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Alter" Type="Int32" />
+    <NavigationProperty Name="PersonenDetails" Relationship="Self.FK_PersonenDetails_ToTable" FromRole="Person" ToRole="PersonenDetails" />
+  </EntityType>
+  <EntityType Name="PersonenDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Wohnort" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Blutgruppe" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="isEinLanger" Type="Int32" />
+    <NavigationProperty Name="Person" Relationship="Self.FK_PersonenDetails_ToTable" FromRole="PersonenDetails" ToRole="Person" />
+  </EntityType>
+  <Association Name="FK_PersonenDetails_ToTable">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="PersonenDetails" Type="Self.PersonenDetails" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PersonenDetails">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MeineHeutigenEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Person" EntityType="Self.Person" />
+    <EntitySet Name="PersonenDetails" EntityType="Self.PersonenDetails" />
+    <AssociationSet Name="FK_PersonenDetails_ToTable" Association="Self.FK_PersonenDetails_ToTable">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="PersonenDetails" EntitySet="PersonenDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

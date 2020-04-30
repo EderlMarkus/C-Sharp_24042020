@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="50" />
+    <Property Name="Alter" Type="int" />
+  </EntityType>
+  <EntityType Name="PersonenDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Wohnort" Type="nchar" MaxLength="50" />
+    <Property Name="Blutgruppe" Type="nchar" MaxLength="10" />
+    <Property Name="isEinLanger" Type="int" />
+  </EntityType>
+  <Association Name="FK_PersonenDetails_ToTable">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="PersonenDetails" Type="Self.PersonenDetails" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PersonenDetails">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonenDetails" EntityType="Self.PersonenDetails" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_PersonenDetails_ToTable" Association="Self.FK_PersonenDetails_ToTable">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="PersonenDetails" EntitySet="PersonenDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

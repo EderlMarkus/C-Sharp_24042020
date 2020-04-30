@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="MeineHeutigenEntities">
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="Model.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Alter" ColumnName="Alter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonenDetails">
+      <EntityTypeMapping TypeName="Model.PersonenDetails">
+        <MappingFragment StoreEntitySet="PersonenDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Wohnort" ColumnName="Wohnort" />
+          <ScalarProperty Name="Blutgruppe" ColumnName="Blutgruppe" />
+          <ScalarProperty Name="isEinLanger" ColumnName="isEinLanger" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

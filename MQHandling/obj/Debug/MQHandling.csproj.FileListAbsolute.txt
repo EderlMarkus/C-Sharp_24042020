@@ -1,0 +1,5 @@
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\MQHandling\bin\Debug\MQHandling.dll
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\MQHandling\bin\Debug\MQHandling.pdb
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\MQHandling\obj\Debug\MQHandling.csprojAssemblyReference.cache
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\MQHandling\obj\Debug\MQHandling.dll
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\MQHandling\obj\Debug\MQHandling.pdb

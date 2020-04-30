@@ -1,0 +1,16 @@
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\WCF.exe.config
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\WCF.exe
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\WCF.pdb
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\DataLayer.dll
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\EntityFramework.dll
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\EntityFramework.SqlServer.dll
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\Shared.dll
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\DataLayer.pdb
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\DataLayer.dll.config
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\EntityFramework.xml
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\EntityFramework.SqlServer.xml
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\bin\Debug\Shared.pdb
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\obj\Debug\WCF.csprojAssemblyReference.cache
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\obj\Debug\WCF.csproj.CopyComplete
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\obj\Debug\WCF.exe
+D:\WI_Studium\WI_SS2020\Komponentenbasierte Anwendungsentwicklung\24042020\24042020_02\WCF\obj\Debug\WCF.pdb
